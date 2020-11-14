@@ -1,2 +1,9 @@
-# helpmehelpyou
-hacks and fixes to do my future self and others a favour?
+# POWERSHELL
+Description | Command 
+--------------------- | ---------------------
+bulk replace filename |
+
+# GIT MARKDOWN
+Description | Usage
+----------- | -----
+New line | \<br/>
