@@ -1,5 +1,5 @@
-# How-to with Details
-## Expandable details
+# Markdown how-to examples
+## How to hide/show content on click
 
 ### __RAW__
 
