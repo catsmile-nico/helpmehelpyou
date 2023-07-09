@@ -34,3 +34,11 @@
 | Rename tags         | ```git tag {new_tagname} {old_tagname}``` |
 | Delete tag          | ```git tag -d {tagname}   ```             |
 | Delete remote tag   | ```git push --delete origin tagname```    |
+
+
+<br>
+
+## Misc (Github)
+| Description         | Example                                                                                                                    |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Deploy Github pages | 1. Settings > General > Repo have to be public<br/> 2. Settings > Pages > Select Source and Branch and Enforce HTTPS <br/> 3. Do fresh commit+push to trigger rebuild which can be checked at {repo}/deploments |
