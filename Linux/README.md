@@ -21,10 +21,11 @@
 <br>
 
 ## Process
-| Description              | Example             |
-| ------------------------ | ------------------- |
-| Show PID/CPU/MEM usage   | ```ps -aux```       |
-| Kill a process using PID | ```kill -9 {PID}``` |
+| Description               | Example                  |
+| ------------------------- | ------------------------ |
+| Show PID/CPU/MEM usage    | ```ps -aux```            |
+| Kill a process using PID  | ```kill -9 {PID}```      |
+| Kill all user's processes | ```pkill -9 -u {user}``` |
 
 <br>
 
@@ -48,3 +49,9 @@ echo "New version:" $new_version
 jq ".metadata.script_version = \"$new_version\"" test.ipynb > tmp.ipynb
 mv tmp.ipynb test.ipynb
 ```
+
+# Package Collection
+
+installer | package | description
+--- | --- | ---
+apt | nethogs | Network monitoring program
