@@ -1,4 +1,10 @@
 # Markdown how-to examples
+
+## General
+| Description          | Example |
+| -------------------- | ------- |
+| Directory characters | ├ └ ─   |
+
 ## How to hide/show content on click
 
 ### __RAW__
@@ -22,3 +28,9 @@ Some content
 </details>
 
 ---
+
+## How to add footnotes
+
+Here is some text[^1^].
+
+[^1^]: This is the footnote content.
