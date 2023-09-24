@@ -50,8 +50,54 @@ jq ".metadata.script_version = \"$new_version\"" test.ipynb > tmp.ipynb
 mv tmp.ipynb test.ipynb
 ```
 
+<br>
+
 # Package Collection
 
 installer | package | description
 --- | --- | ---
 apt | nethogs | Network monitoring program
+
+<br>
+
+# WSL
+
+## Miniconda
+
+### Install
+
+```bash
+cd ~
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+chmod +x Miniconda3-latest-Linux-x86_64.sh
+sh Miniconda3-latest-Linux-x86_64.sh
+rm Miniconda3-latest-Linux-x86_64.sh
+source .bashrc
+conda config --set auto_activate_base false
+source .bashrc
+```
+
+### Create environment
+
+```bash
+conda create -n {env_name} python={python_version}
+```
+
+
+## Configurations
+
+### To increase memory 
+At c:\\user\\{name} create .wslconfig and add the following
+
+```
+[wsl2]
+memory=11GB
+```
+
+### Enabled systemd
+Inside your Ubuntu instance, add the following modification to /etc/wsl.conf.
+
+```
+[boot]
+systemd=true
+```
