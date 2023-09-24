@@ -42,3 +42,18 @@
 | Description         | Example                                                                                                                    |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | Deploy Github pages | 1. Settings > General > Repo have to be public<br/> 2. Settings > Pages > Select Source and Branch and Enforce HTTPS <br/> 3. Do fresh commit+push to trigger rebuild which can be checked at {repo}/deploments |
+
+# Set SSH key for Github
+
+```bash
+cd ~
+
+# Leave everything default except for passphrase
+ssh-keygen -t ed25519 -C "example@email.com"
+
+# Copy contents and go to https://github.com/settings/keys > New SSH key > Authentication Key
+cat .ssh/id_ed25519.pub
+
+# Test key
+ssh -T git@github.com
+```
